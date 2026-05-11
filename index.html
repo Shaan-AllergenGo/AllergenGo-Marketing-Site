@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon and icons -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>AllergenGo — Allergy-Safe Dining Made Simple</title>
+
+    <style>
+        :root {
+            --green: #40945c;
+            --green-dark: #2d6c44;
+            --bg: #f9fafb;
+            --text: #333333;
+            --text-light: #666666;
+            --radius: 0.5rem;
+            --transition: 0.2s ease-in-out;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .btn {
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: background var(--transition);
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--green);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--green-dark);
+        }
+
+        .get-started-btn {
+            color: white !important;
+            background-color: green !important;
+            border: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-width);
+            width: 100%;
+            margin: auto;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        .nav-item {
+            color: black;
+        }
+
+        header nav {
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e9f5e9, #cdeedb);
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--green-dark);
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: var(--text-light);
+            font-size: 1.125rem;
+        }
+
+        section {
+            padding: 4rem 1rem;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--green-dark);
+            margin-bottom: 2rem;
+        }
+
+        #features .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            color: var(--green);
+            font-weight: 600;
+        }
+
+        .feature p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        #why .text-block {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #why .text-block p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        footer {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="#">AllergenGo</a>
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="btn" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn" href="#why">What is AllergenGo?</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Safe, simple dining for people with allergies</h1>
+                <p>Add your dishes and associated allergens to the app, and generate a QR code users can scan to filter those dishes based on their allergies.</p>
+                <a href="mailto:sales@allergengo.com" class="btn btn-primary get-started-btn">Contact Sales</a>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Real-Time Statistics</h3>
+                    <p>See which dishes users are choosing, and optimize your menu for safety.</p>
+                </div>
+                <div class="feature">
+                    <h3>You Add the Dishes</h3>
+                    <p>Add all your dishes and their allergens so users can confidently choose safe options.</p>
+                </div>
+                <div class="feature">
+                    <h3>QR Code Menu Access</h3>
+                    <p>Generate a unique QR code so diners can view and filter your menu instantly. Print it out, include it with physical menus, and save valuable time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="why">
+            <div class="container">
+                <h2 class="section-title">What is AllergenGo?</h2>
+                <div class="text-block">
+                    <p>
+                        When a person with an allergy visits your restaurant, they often need to speak with a chef or browse a binder of ingredients. This method is outdated, prone to error, and potentially dangerous. Allergies can be life-threatening — and have resulted in fatalities in the past.
+                    </p>
+
+                    <p>
+                        With AllergenGo, you enter your dishes and their allergens via your admin dashboard. The system then generates a unique QR code for diners to scan. After scanning, users enter their allergens, and the app instantly filters the menu to show only safe options.
+                    </p>
+
+                    <p>
+                        This shifts responsibility to the customer in a safe and empowering way. Rather than relying on staff explanations, diners with allergies can view a complete menu, clearly marked with allergens, and feel confident in their choices.
+                    </p>
+
+                    <p>
+                        Interested in getting started or have questions? Email us directly at:
+                        <strong><a href="mailto:sales@allergengo.com">sales@allergengo.com</a></strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        AllergenGo — Allergy-Safe Dining Made Simple || 
+        Contact us: <strong><a href="mailto:sales@allergengo.com">sales@allergengo.com</a></strong>
+    </footer>
+
+</body>
+
+</html>
